@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumInfo - Number Lookup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+        input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            background: rgba(255,255,255,0.9);
+            outline: none;
+        }
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            background: #e94560;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ff6b6b;
+            transform: scale(1.05);
+        }
+        .result {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            display: none;
+        }
+        .result.show {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            color: #fff;
+        }
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        .label {
+            color: #aaa;
+        }
+        .value {
+            font-weight: 600;
+        }
+        .error {
+            color: #ff6b6b;
+            text-align: center;
+            padding: 20px;
+        }
+        .loading {
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+        .loading::after {
+            content: '';
+            animation: dots 1.5s infinite;
+        }
+        @keyframes dots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 NumInfo</h1>
+        <div class="input-group">
+            <input type="tel" id="phone" placeholder="Enter number (01XXXXXXXXX)" maxlength="12">
+            <button onclick="lookup()">Search</button>
+        </div>
+        <div id="result"></div>
+        <div class="footer">Made by RL</div>
+    </div>
+
+    <script>
+        const API_URL = "https://mahmud-infinity-api.onrender.com";
+
+        async function lookup() {
+            const phone = document.getElementById('phone').value.replace(/\D/g, '');
+            const resultDiv = document.getElementById('result');
+
+            if (!phone) {
+                resultDiv.innerHTML = '<div class="error">Please enter a phone number</div>';
+                resultDiv.classList.add('show');
+                return;
+            }
+
+            let number = phone;
+            if (number.startsWith('0')) {
+                number = '88' + number;
+            }
+
+            resultDiv.innerHTML = '<div class="loading">Searching</div>';
+            resultDiv.classList.add('show');
+
+            try {
+                const response = await fetch(`${API_URL}/api/numinfo?number=${number}`);
+                const data = await response.json();
+
+                if (data.success) {
+                    resultDiv.innerHTML = `
+                        <div class="result show">
+                            <div class="info-row">
+                                <span class="label">Name</span>
+                                <span class="value">${data.name || 'Not Found'}</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">Number</span>
+                                <span class="value">${data.number}</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">FB ID</span>
+                                <span class="value">${data.facebook_id || 'Not Found'}</span>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    resultDiv.innerHTML = '<div class="error">No data found</div>';
+                }
+            } catch (err) {
+                resultDiv.innerHTML = '<div class="error">Error fetching data</div>';
+            }
+        }
+
+        document.getElementById('phone').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') lookup();
+        });
+    </script>
+</body>
+</html>
