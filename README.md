@@ -30,7 +30,7 @@ Go to your repo **Settings → Secrets and variables → Actions → New reposit
 
 | Name | Value |
 |------|-------|
-| `API_URL` | Your API endpoint (e.g. `https://mahmud-infinity-api.onrender.com`) |
+| `API_URL` | Your API endpoint (e.g. ``) |
 
 ### 2. Enable GitHub Pages
 
@@ -46,7 +46,7 @@ Every push to `master` will automatically build and deploy.
 
 ```bash
 # Set your API URL
-export API_URL="https://mahmud-infinity-api.onrender.com"
+export API_URL=""
 
 # Run build
 chmod +x build.sh
@@ -58,7 +58,7 @@ chmod +x build.sh
 Or without the build script:
 
 ```bash
-export API_URL="https://mahmud-infinity-api.onrender.com"
+export API_URL=""
 sed "s|{{API_URL}}|${API_URL}|g" src/index.html > dist/index.html
 ```
 
