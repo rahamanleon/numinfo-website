@@ -248,8 +248,23 @@
     </div>
 
     <script>
-        // NumInfo API endpoint
-        const API_URL = 'https://mahmud-infinity-api.onrender.com';
+        // NumInfo API endpoint - injected at build time via GitHub Actions
+        // The placeholder {{API_URL}} is replaced during CI/CD build
+        const API_URL = '{{API_URL}}' === '{{API_URL}}' ? '' : '{{API_URL}}';
+        
+        // Detect base path for GitHub Pages subdirectory deployments
+        (function() {
+            var pathSegments = window.location.pathname.split('/');
+            var basePath = '/';
+            for (var i = 1; i < pathSegments.length; i++) {
+                if (pathSegments[i]) {
+                    basePath += pathSegments[i] + '/';
+                    break;
+                }
+            }
+            window.BASE_PATH = basePath;
+        })();
+    </script>
 
         const phoneInput = document.getElementById('phone');
         const searchBtn = document.getElementById('searchBtn');
