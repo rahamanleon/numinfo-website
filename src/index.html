@@ -248,9 +248,10 @@
     </div>
 
     <script>
-        // NumInfo API endpoint - injected at build time via GitHub Actions
-        // The placeholder {{API_URL}} is replaced during CI/CD build
-        const API_URL = '{{API_URL}}' === '{{API_URL}}' ? '' : '{{API_URL}}';
+        // NumInfo API endpoint
+        // On Vercel: injected at build time via vercel-build.sh
+        // On GitHub Pages: injected via GitHub Actions workflow
+        const API_URL = '{{API_URL}}' === '{{API_URL}}' ? 'https://mahmud-infinity-api.onrender.com' : '{{API_URL}}';
         
         // Detect base path for GitHub Pages subdirectory deployments
         (function() {
