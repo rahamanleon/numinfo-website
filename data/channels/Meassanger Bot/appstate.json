@@ -1,0 +1,17 @@
+{
+  "_comment": "PLACE YOUR FACEBOOK APPSTATE JSON HERE",
+  "_instructions": "Get cookies from browser using C3C FbState or CookieEditor extension",
+  "_format": [
+    {
+      "key": "c_user",
+      "value": "your_user_id",
+      "domain": ".facebook.com"
+    },
+    {
+      "key": "xs",
+      "value": "your_session_token",
+      "domain": ".facebook.com"
+    }
+  ],
+  "appstate": []
+}

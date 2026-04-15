@@ -1,0 +1,12 @@
+# WhatsApp Baileys Sessions
+sessions/
+*.json
+!package.json
+!package-lock.json
+
+# Environment
+.env
+
+# Logs
+*.log
+logs/

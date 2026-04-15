@@ -1,0 +1,5 @@
+user_data/
+node_modules/
+logs.json
+*.log
+.DS_Store

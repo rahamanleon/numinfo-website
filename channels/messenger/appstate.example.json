@@ -1,0 +1,30 @@
+[
+  {
+    "key": "c_user",
+    "value": "YOUR_USER_ID_HERE",
+    "domain": ".facebook.com",
+    "path": "/",
+    "expirationDate": 9999999999
+  },
+  {
+    "key": "xs",
+    "value": "YOUR_SESSION_TOKEN_HERE",
+    "domain": ".facebook.com",
+    "path": "/",
+    "expirationDate": 9999999999
+  },
+  {
+    "key": "fr",
+    "value": "YOUR_FR_TOKEN_HERE",
+    "domain": ".facebook.com",
+    "path": "/",
+    "expirationDate": 9999999999
+  },
+  {
+    "key": "datr",
+    "value": "YOUR_DATR_TOKEN_HERE",
+    "domain": ".facebook.com",
+    "path": "/",
+    "expirationDate": 9999999999
+  }
+]

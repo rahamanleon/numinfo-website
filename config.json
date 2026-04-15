@@ -1,0 +1,411 @@
+{
+  "version": 2,
+  "isolation": {},
+  "agents": {
+    "defaults": {
+      "workspace": "/data/data/com.termux/files/home/.picoclaw/data",
+      "restrict_to_workspace": false,
+      "allow_read_outside_workspace": false,
+      "provider": "",
+      "model_name": "my-assistant",
+      "max_tokens": 0,
+      "max_tool_iterations": 0,
+      "summarize_message_threshold": 0,
+      "summarize_token_percent": 0,
+      "steering_mode": "one-at-a-time",
+      "subturn": {
+        "max_depth": 0,
+        "max_concurrent": 0,
+        "default_timeout_minutes": 0,
+        "default_token_budget": 0,
+        "concurrency_timeout_sec": 0
+      },
+      "tool_feedback": {
+        "enabled": true,
+        "max_args_length": 300
+      },
+      "split_on_marker": true
+    }
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": false,
+      "bridge_url": "",
+      "use_native": false,
+      "session_store_path": "",
+      "allow_from": null,
+      "reasoning_channel_id": ""
+    },
+    "telegram": {
+      "enabled": true,
+      "base_url": "",
+      "proxy": "",
+      "allow_from": [
+        "8510092274"
+      ],
+      "group_trigger": {},
+      "typing": {},
+      "placeholder": {
+        "enabled": false
+      },
+      "streaming": {},
+      "reasoning_channel_id": "Thinking...",
+      "use_markdown_v2": true
+    },
+    "messenger": {
+      "enabled": true,
+      "appstate_path": "/data/data/com.termux/files/home/.picoclaw/data/appstate.json",
+      "prefix": "/",
+      "allow_from": [
+        "100037951718438"
+      ],
+      "self_listen": false,
+      "online": true,
+      "update_presence": true,
+      "random_user_agent": false,
+      "typing": {
+        "enabled": true
+      },
+      "placeholder": {
+        "enabled": false
+      },
+      "reasoning_channel_id": "Thinking...",
+      "use_mqtt": true
+    },
+    "feishu": {
+      "enabled": false,
+      "app_id": "",
+      "allow_from": null,
+      "group_trigger": {},
+      "placeholder": {
+        "enabled": false
+      },
+      "reasoning_channel_id": "",
+      "random_reaction_emoji": null,
+      "is_lark": false
+    },
+    "discord": {
+      "enabled": false,
+      "proxy": "",
+      "allow_from": null,
+      "mention_only": false,
+      "group_trigger": {},
+      "typing": {},
+      "placeholder": {
+        "enabled": false
+      },
+      "reasoning_channel_id": ""
+    },
+    "maixcam": {
+      "enabled": false,
+      "host": "",
+      "port": 0,
+      "allow_from": null,
+      "reasoning_channel_id": ""
+    },
+    "qq": {
+      "enabled": false,
+      "app_id": "",
+      "allow_from": null,
+      "group_trigger": {},
+      "max_message_length": 0,
+      "max_base64_file_size_mib": 0,
+      "send_markdown": false,
+      "reasoning_channel_id": ""
+    },
+    "dingtalk": {
+      "enabled": false,
+      "client_id": "",
+      "allow_from": null,
+      "group_trigger": {},
+      "reasoning_channel_id": ""
+    },
+    "slack": {
+      "enabled": false,
+      "allow_from": null,
+      "group_trigger": {},
+      "typing": {},
+      "placeholder": {
+        "enabled": false
+      },
+      "reasoning_channel_id": ""
+    },
+    "matrix": {
+      "enabled": false,
+      "homeserver": "",
+      "user_id": "",
+      "join_on_invite": false,
+      "allow_from": null,
+      "group_trigger": {},
+      "placeholder": {
+        "enabled": false
+      },
+      "reasoning_channel_id": ""
+    },
+    "line": {
+      "enabled": false,
+      "webhook_host": "",
+      "webhook_port": 0,
+      "webhook_path": "",
+      "allow_from": null,
+      "group_trigger": {},
+      "typing": {},
+      "placeholder": {
+        "enabled": false
+      },
+      "reasoning_channel_id": ""
+    },
+    "onebot": {
+      "enabled": false,
+      "ws_url": "",
+      "reconnect_interval": 0,
+      "group_trigger_prefix": null,
+      "allow_from": null,
+      "group_trigger": {},
+      "typing": {},
+      "placeholder": {
+        "enabled": false
+      },
+      "reasoning_channel_id": ""
+    },
+    "wecom": {
+      "enabled": false,
+      "bot_id": "",
+      "send_thinking_message": false,
+      "allow_from": null,
+      "reasoning_channel_id": ""
+    },
+    "weixin": {
+      "enabled": false,
+      "base_url": "",
+      "cdn_base_url": "",
+      "proxy": "",
+      "allow_from": null,
+      "reasoning_channel_id": ""
+    },
+    "pico": {
+      "enabled": false,
+      "allow_from": null,
+      "placeholder": {
+        "enabled": false
+      }
+    },
+    "pico_client": {
+      "enabled": false,
+      "url": "",
+      "allow_from": null
+    },
+    "irc": {
+      "enabled": false,
+      "server": "",
+      "tls": false,
+      "nick": "",
+      "sasl_user": "",
+      "channels": null,
+      "allow_from": null,
+      "group_trigger": {},
+      "typing": {},
+      "reasoning_channel_id": ""
+    },
+    "vk": {
+      "enabled": false,
+      "group_id": 0,
+      "allow_from": null,
+      "group_trigger": {},
+      "typing": {},
+      "placeholder": {
+        "enabled": false
+      },
+      "reasoning_channel_id": ""
+    },
+    "teams_webhook": {
+      "enabled": false,
+      "webhooks": null
+    }
+  },
+  "model_list": [
+    {
+      "model_name": "my-assistant",
+      "model": "ollama/minimax-m2.7:cloud",
+      "api_base": "http://127.0.0.1:11434/v1",
+      "api_keys": "[NOT_HERE]",
+      "enabled": true
+    }
+  ],
+  "gateway": {
+    "host": "",
+    "port": 2007,
+    "hot_reload": false
+  },
+  "hooks": {
+    "enabled": true,
+    "defaults": {
+      "observer_timeout_ms": 500,
+      "interceptor_timeout_ms": 5000,
+      "approval_timeout_ms": 60000
+    }
+  },
+  "tools": {
+    "allow_read_paths": null,
+    "allow_write_paths": null,
+    "filter_sensitive_data": true,
+    "filter_min_length": 8,
+    "web": {
+      "enabled": false,
+      "brave": {
+        "enabled": false,
+        "api_keys": "[NOT_HERE]",
+        "max_results": 0
+      },
+      "tavily": {
+        "enabled": false,
+        "api_keys": "[NOT_HERE]",
+        "base_url": "",
+        "max_results": 0
+      },
+      "duckduckgo": {
+        "enabled": true,
+        "max_results": 0
+      },
+      "perplexity": {
+        "enabled": false,
+        "api_keys": "[NOT_HERE]",
+        "max_results": 0
+      },
+      "searxng": {
+        "enabled": false,
+        "base_url": "",
+        "max_results": 0
+      },
+      "glm_search": {
+        "enabled": false,
+        "base_url": "",
+        "search_engine": "",
+        "max_results": 0
+      },
+      "baidu_search": {
+        "enabled": false,
+        "base_url": "",
+        "max_results": 0
+      },
+      "prefer_native": false
+    },
+    "cron": {
+      "enabled": false,
+      "exec_timeout_minutes": 0,
+      "allow_command": false
+    },
+    "exec": {
+      "enabled": true,
+      "enable_deny_patterns": false,
+      "allow_remote": true,
+      "custom_deny_patterns": null,
+      "custom_allow_patterns": null,
+      "timeout_seconds": 100
+    },
+    "skills": {
+      "enabled": true,
+      "registries": {
+        "clawhub": {
+          "enabled": false,
+          "base_url": "",
+          "search_path": "",
+          "skills_path": "",
+          "download_path": "",
+          "timeout": 0,
+          "max_zip_size": 0,
+          "max_response_size": 0
+        }
+      },
+      "github": {},
+      "max_concurrent_searches": 0,
+      "search_cache": {
+        "max_size": 0,
+        "ttl_seconds": 0
+      }
+    },
+    "media_cleanup": {
+      "enabled": true,
+      "max_age_minutes": 0,
+      "interval_minutes": 0
+    },
+    "mcp": {
+      "enabled": false,
+      "discovery": {
+        "enabled": false,
+        "ttl": 0,
+        "max_search_results": 0,
+        "use_bm25": false,
+        "use_regex": false
+      }
+    },
+    "append_file": {
+      "enabled": true
+    },
+    "edit_file": {
+      "enabled": true
+    },
+    "find_skills": {
+      "enabled": true
+    },
+    "i2c": {
+      "enabled": false
+    },
+    "install_skill": {
+      "enabled": true
+    },
+    "list_dir": {
+      "enabled": true
+    },
+    "message": {
+      "enabled": true
+    },
+    "read_file": {
+      "enabled": true,
+      "mode": "",
+      "max_read_file_size": 0
+    },
+    "send_file": {
+      "enabled": false
+    },
+    "send_tts": {
+      "enabled": false
+    },
+    "spawn": {
+      "enabled": false
+    },
+    "spawn_status": {
+      "enabled": false
+    },
+    "spi": {
+      "enabled": false
+    },
+    "subagent": {
+      "enabled": false
+    },
+    "web_fetch": {
+      "enabled": true
+    },
+    "write_file": {
+      "enabled": true
+    }
+  },
+  "heartbeat": {
+    "enabled": false,
+    "interval": 0
+  },
+  "devices": {
+    "enabled": false,
+    "monitor_usb": false
+  },
+  "voice": {
+    "echo_transcription": true
+  },
+  "build_info": {
+    "version": "dev",
+    "git_commit": "",
+    "build_time": "",
+    "go_version": ""
+  }
+}
+

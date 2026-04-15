@@ -1,0 +1,20 @@
+name: Keep Render Alive
+
+on:
+  schedule:
+    # Every 5 minutes - keeps free tier from sleeping
+    - cron: "*/5 * * * *"
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Ping Render Service
+        run: |
+          # Replace with your Render app URL
+          curl -f -s -o /dev/null https://your-dora-agent.onrender.com/ping || \
+          curl -f -s -o /dev/null https://your-app.onrender.com/ping || \
+          echo "Service ping failed (may be sleeping)"
+        continue-on-error: true

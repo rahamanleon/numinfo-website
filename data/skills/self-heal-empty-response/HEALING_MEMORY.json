@@ -1,0 +1,15 @@
+{
+  "version": "3.0.0",
+  "patterns": [],
+  "adjustments": {
+    "context_window_default": 0.5,
+    "chunking_threshold": 500,
+    "reasoning_limit": 3,
+    "non_critical_disabled": ["verbose_greetings", "decorative_formatting", "redundant_explanations"]
+  },
+  "sessions": [],
+  "last_updated": "2026-04-12T00:00:00Z"
+}
+{"timestamp":"2026-04-13T02:30:00Z","patternDetected":"repeated_empty_response","mitigation":"aggressive_context_pruning_applied","sessionId":"sess_bce63e7a","action":"monitoring_whatsapp_qr"}
+{"timestamp":"2026-08-11T06:48:00Z","patternDetected":"empty_response_provider_error","mitigationApplied":"apply_context_optimization_and_streaming","sessionId":"sess_streaming_telegram","findings":"context_overflow_during_long_responses","adjustments":[{"setting":"max_prompt_tokens","newValue":"8000"},{"setting":"response_chunking","newValue":"enabled"},{"setting":"context_management","newValue":"aggressive_pruning"}]}
+{"timestamp":"2026-08-11T07:10:00Z","patternDetected":"empty_response_during_telegram_streaming","mitigationApplied":"applied_chunking_and_context_optimization","sessionId":"sess_fix_telegram_empty","findings":"token_limit_exceeded_on_long_responses","adjustments":[{"setting":"streaming_chunk_size","newValue":"1000"},{"setting":"context_pruning_threshold","newValue":"60pct"},{"setting":"retry_strategy","newValue":"aggressive_simplification"}],"status":"monitoring"}

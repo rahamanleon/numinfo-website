@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "skills": {
+    "elite-longterm-memory": {
+      "version": "1.2.3",
+      "installedAt": 1776026566849
+    },
+    "webhook-send": {
+      "version": "1.0.0",
+      "installedAt": 1776026572855
+    },
+    "telegram-notify": {
+      "version": "1.0.0",
+      "installedAt": 1776026581079
+    },
+    "notify-hub": {
+      "version": "1.0.4",
+      "installedAt": 1776026587838
+    },
+    "smart-scheduler": {
+      "version": "0.1.0",
+      "installedAt": 1776026603816
+    },
+    "flexible-database-design": {
+      "version": "1.0.0",
+      "installedAt": 1776026612511
+    },
+    "image-recognition": {
+      "version": "1.1.0",
+      "installedAt": 1776091894361
+    },
+    "speech-recognition": {
+      "version": "1.0.1",
+      "installedAt": 1776091897586
+    },
+    "ocr-local": {
+      "version": "1.0.0",
+      "installedAt": 1776091904787
+    },
+    "voice-wake-say": {
+      "version": "1.0.1",
+      "installedAt": 1776091907613
+    },
+    "go-music-skill": {
+      "version": "0.0.2",
+      "installedAt": 1776092281223
+    },
+    "web-deploy-github": {
+      "version": "1.0.0",
+      "installedAt": 1776202135593
+    },
+    "web-screenshot": {
+      "version": "1.1.3",
+      "installedAt": 1776202100547
+    },
+    "github-pages-auto-deploy": {
+      "version": "1.0.0",
+      "installedAt": 1776202130132
+    },
+    "deep-research-pro": {
+      "version": "1.0.2",
+      "installedAt": 1776238536978
+    },
+    "in-depth-research": {
+      "version": "1.0.0",
+      "installedAt": 1776238540202
+    },
+    "firecrawl-search": {
+      "version": "1.0.0",
+      "installedAt": 1776238546891
+    },
+    "web-scraper-jina": {
+      "version": "1.0.1",
+      "installedAt": 1776238550998
+    },
+    "crawl4ai-skill": {
+      "version": "1.0.10",
+      "installedAt": 1776238566645
+    },
+    "exa-web-search-free": {
+      "version": "1.0.1",
+      "installedAt": 1776238570134
+    },
+    "automation-workflows": {
+      "version": "0.1.0",
+      "installedAt": 1776283221379
+    },
+    "memory-tiering": {
+      "version": "1.0.0",
+      "installedAt": 1776283227187
+    },
+    "fluid-memory": {
+      "version": "1.0.9",
+      "installedAt": 1776283232077
+    },
+    "code-review-fix": {
+      "version": "1.0.0",
+      "installedAt": 1776283237312
+    },
+    "explain-code": {
+      "version": "1.0.0",
+      "installedAt": 1776283241949
+    },
+    "neural-memory": {
+      "version": "4.49.0",
+      "installedAt": 1776283248037
+    },
+    "code-generator": {
+      "version": "2.3.4",
+      "installedAt": 1776283252580
+    }
+  }
+}

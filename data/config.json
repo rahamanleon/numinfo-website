@@ -1,0 +1,28 @@
+{
+  "max_tool_iterations": 500,
+  "whatsapp": {
+    "enabled": true,
+    "phone_number": "8801831292448",
+    "creds_path": "channels/whatsapp-baileys/sessions/creds.json",
+    "handler_path": "channels/whatsapp-baileys/src/handler.js",
+    "auto_reconnect": true,
+    "reconnect_attempts": 5
+  },
+  "messenger": {
+    "enabled": true,
+    "appstate_path": "channels/facebook-messenger/appstate.json",
+    "handler_path": "channels/facebook-messenger/src/handler.js"
+  },
+  "telegram": {
+    "enabled": false
+  },
+  "ollama": {
+    "base_url": "http://127.0.0.1:11434",
+    "model": "my-assistant",
+    "api_key": ""
+  },
+  "logging": {
+    "level": "info",
+    "file": "logs/picoclaw.log"
+  }
+}

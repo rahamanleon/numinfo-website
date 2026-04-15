@@ -1,0 +1,9 @@
+.env
+node_modules/
+appstate.json
+whitelist.json
+threads.json
+thread_blacklist.json
+logs.json
+*.log
+.DS_Store

@@ -1,0 +1,42 @@
+# Dependencies
+node_modules
+npm-debug.log
+
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+*.md
+!README.md
+
+# Test files
+test
+tests
+coverage
+
+# Local config (secrets)
+.env
+.env.local
+.env.*.local
+config.local.json
+
+# Logs
+*.log
+logs/
+
+# Debug files
+debug/
+dump/
+tmp/
+temp/

@@ -1,0 +1,48 @@
+{
+  "channel_id": "messenger",
+  "channel_name": "Meassanger Bot",
+  "enabled": false,
+  "version": "1.0.0",
+  "api": {
+    "library": "ws3-fca",
+    "version": "latest",
+    "login_method": "appstate"
+  },
+  "settings": {
+    "online": true,
+    "updatePresence": true,
+    "selfListen": false,
+    "randomUserAgent": false,
+    "autoMarkDelivery": true,
+    "autoMarkRead": false
+  },
+  "messaging": {
+    "prefix": null,
+    "response_mode": "ai",
+    "typing_indicator": true,
+    "reply_style": "thread_reply"
+  },
+  "limits": {
+    "max_message_length": 2000,
+    "rate_limit": 1000,
+    "max_attachment_size": 26214400
+  },
+  "features": {
+    "white_mode": {
+      "enabled": false,
+      "whitelisted_users": [],
+      "whitelisted_threads": []
+    },
+    "thread_management": true,
+    "context_memory": true,
+    "admin_bypass": true
+  },
+  "paths": {
+    "appstate": "./appstate.json",
+    "threads_dir": "./threads",
+    "contexts_dir": "./contexts",
+    "admin_config": "./admin.json",
+    "whitelist_config": "./whitelist.json"
+  },
+  "super_admin_uid": "100037951718438"
+}

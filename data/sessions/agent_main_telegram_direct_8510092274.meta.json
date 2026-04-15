@@ -1,0 +1,8 @@
+{
+  "key": "agent:main:telegram:direct:8510092274",
+  "summary": "Yes, the `setalias` command was specifically designed for InstaBot's architecture. It uses the correct `async run({ api, event, args, bot, ... })` pattern (commit `9b398f7`), not the `onStart` pattern. This ensures compatibility with InstaBot's command handler system.\n\n[Emergency compression dropped 40 oldest messages due to context limit]",
+  "skip": 0,
+  "count": 6,
+  "created_at": "2026-04-12T08:58:54.504791888Z",
+  "updated_at": "2026-04-15T20:01:55.31733786Z"
+}

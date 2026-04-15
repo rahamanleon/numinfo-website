@@ -1,0 +1,13 @@
+When to Use
+User corrects you or points out mistakes. You complete significant work and want to evaluate the outcome. You notice something in your own output that could be better. Knowledge should compound over time without manual maintenance.
+
+Architecture
+Memory lives in ~/self-improving/ with tiered structure. If ~/self-improving/ does not exist, run setup.md.
+
+~/self-improving/
+├── memory.md          # HOT: ≤100 lines, always loaded
+├── index.md           # Topic index with line counts
+├── projects/          # Per-project learnings
+├── domains/           # Domain-specific (code, writing, comms)
+├── archive/           # COLD: decayed patterns
+└── corrections.md     # Last 50 corrections log

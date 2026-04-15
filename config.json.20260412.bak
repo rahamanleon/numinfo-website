@@ -1,0 +1,23 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "/root/.picoclaw/workspace",
+      "model": "my-assistant"
+    }
+  },
+  "model_list": [
+    {
+      "model_name": "my-assistant",
+      "model": "ollama/kimi-k2.5:cloud",
+      "api_base": "http://127.0.0.1:11434/v1",
+      "api_key": "ollama"
+    }
+  ],
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "token": "8682066432:AAFpVRR4-bfwdqeS-msswFFcpfm9NqSCA2k",
+      "allow_from": [8510092274]
+    }
+  }
+}

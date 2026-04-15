@@ -1,0 +1,82 @@
+2026/04/15 07:39:53 WARN invalid skill from workspace name="Deep Research" error="name must be alphanumeric with hyphens"
+2026/04/15 07:39:53 WARN invalid skill from workspace name="Web Scraper (r.jina.ai)" error="name must be alphanumeric with hyphens"
+2026/04/15 07:55:56 WARN invalid skill from workspace name="Deep Research" error="name must be alphanumeric with hyphens"
+2026/04/15 07:55:57 WARN invalid skill from workspace name="Web Scraper (r.jina.ai)" error="name must be alphanumeric with hyphens"
+2026/04/15 12:35:28 WARN invalid skill from workspace name="Deep Research" error="name must be alphanumeric with hyphens"
+2026/04/15 12:35:28 WARN invalid skill from workspace name="Web Scraper (r.jina.ai)" error="name must be alphanumeric with hyphens"
+2026/04/15 12:36:02 WARN invalid skill from workspace name="Deep Research" error="name must be alphanumeric with hyphens"
+2026/04/15 12:36:02 WARN invalid skill from workspace name="Web Scraper (r.jina.ai)" error="name must be alphanumeric with hyphens"
+Error: singleton check failed: gateway is already running (PID: 1031, version: dev)
+Usage:
+  picoclaw gateway [flags]
+
+Aliases:
+  gateway, g
+
+Flags:
+  -E, --allow-empty   Continue starting even when no default model is configured
+  -d, --debug         Enable debug logging
+  -h, --help          help for gateway
+  -T, --no-truncate   Disable string truncation in debug logs
+
+Error: singleton check failed: gateway is already running (PID: 1031, version: dev)
+Usage:
+  picoclaw gateway [flags]
+
+Aliases:
+  gateway, g
+
+Flags:
+  -E, --allow-empty   Continue starting even when no default model is configured
+  -d, --debug         Enable debug logging
+  -h, --help          help for gateway
+  -T, --no-truncate   Disable string truncation in debug logs
+
+Error: singleton check failed: gateway is already running (PID: 1031, version: dev)
+Usage:
+  picoclaw gateway [flags]
+
+Aliases:
+  gateway, g
+
+Flags:
+  -E, --allow-empty   Continue starting even when no default model is configured
+  -d, --debug         Enable debug logging
+  -h, --help          help for gateway
+  -T, --no-truncate   Disable string truncation in debug logs
+
+2026/04/15 15:45:26 WARN invalid skill from workspace name="Deep Research" error="name must be alphanumeric with hyphens"
+2026/04/15 15:45:26 WARN invalid skill from workspace name="Web Scraper (r.jina.ai)" error="name must be alphanumeric with hyphens"
+2026/04/15 15:45:28 WARN invalid skill from workspace name="Deep Research" error="name must be alphanumeric with hyphens"
+2026/04/15 15:45:28 WARN invalid skill from workspace name="Web Scraper (r.jina.ai)" error="name must be alphanumeric with hyphens"
+2026/04/15 16:30:27 WARN invalid skill from workspace name="Deep Research" error="name must be alphanumeric with hyphens"
+2026/04/15 16:30:27 WARN invalid skill from workspace name="Web Scraper (r.jina.ai)" error="name must be alphanumeric with hyphens"
+2026/04/15 16:30:27 WARN invalid skill from workspace name="Deep Research" error="name must be alphanumeric with hyphens"
+2026/04/15 16:30:27 WARN invalid skill from workspace name="Web Scraper (r.jina.ai)" error="name must be alphanumeric with hyphens"
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+zerolog: could not write event: write /dev/stdout: input/output error
+2026/04/15 19:42:03 WARN invalid skill from workspace name="Deep Research" error="name must be alphanumeric with hyphens"
+2026/04/15 19:42:03 WARN invalid skill from workspace name="Web Scraper (r.jina.ai)" error="name must be alphanumeric with hyphens"
+2026/04/15 19:42:21 WARN invalid skill from workspace name="Deep Research" error="name must be alphanumeric with hyphens"
+2026/04/15 19:42:21 WARN invalid skill from workspace name="Web Scraper (r.jina.ai)" error="name must be alphanumeric with hyphens"
+2026/04/15 20:01:48 WARN invalid skill from workspace name="Deep Research" error="name must be alphanumeric with hyphens"
+2026/04/15 20:01:48 WARN invalid skill from workspace name="Web Scraper (r.jina.ai)" error="name must be alphanumeric with hyphens"

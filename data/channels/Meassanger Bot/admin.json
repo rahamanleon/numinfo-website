@@ -1,0 +1,36 @@
+{
+  "super_admin": "100037951718438",
+  "admins": [
+    "100037951718438"
+  ],
+  "admin_permissions": {
+    "100037951718438": {
+      "level": "super",
+      "can_restart": true,
+      "can_manage_admins": true,
+      "can_manage_whitelist": true,
+      "can_manage_threads": true,
+      "can_access_system": true,
+      "can_bypass_whitelist": true,
+      "can_shutdown": true,
+      "can_update_config": true
+    }
+  },
+  "admin_commands": [
+    "addadmin",
+    "removeadmin",
+    "whitelistuser",
+    "whitelistthread",
+    "blacklistuser",
+    "blacklistthread",
+    "enablewhitelist",
+    "disablewhitelist",
+    "createthread",
+    "addtothread",
+    "kickfromthread",
+    "threadinfo",
+    "restart",
+    "status",
+    "reload"
+  ]
+}

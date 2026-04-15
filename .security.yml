@@ -1,0 +1,7 @@
+channels:
+  telegram:
+    token: 8682066432:AAFpVRR4-bfwdqeS-msswFFcpfm9NqSCA2k
+model_list:
+  my-assistant:0:
+    api_keys:
+      - ollama

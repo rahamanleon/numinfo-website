@@ -1,0 +1,13 @@
+{
+  "enabled": false,
+  "mode": "both",
+  "whitelisted_users": [],
+  "whitelisted_threads": [],
+  "blacklisted_users": [],
+  "description": {
+    "mode": "both = user OR thread must be whitelisted",
+    "user_only": "Only UID in list can chat",
+    "thread_only": "Only messages in whitelisted threads",
+    "both": "User must be whitelisted OR in whitelisted thread"
+  }
+}

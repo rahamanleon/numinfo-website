@@ -1,0 +1,32 @@
+{
+  "name": "picobot-messenger",
+  "version": "1.0.0",
+  "description": "Facebook Messenger channel for picobot using ws3-fca",
+  "main": "messenger.js",
+  "scripts": {
+    "start": "node messenger.js",
+    "dev": "nodemon messenger.js"
+  },
+  "dependencies": {
+    "ws3-fca": "^1.0.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0",
+    "fs-extra": "^11.1.0",
+    "chalk": "^4.1.2",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "facebook",
+    "messenger",
+    "bot",
+    "picobot"
+  ],
+  "author": "Rahman Leon",
+  "license": "MIT"
+}

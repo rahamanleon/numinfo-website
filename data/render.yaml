@@ -1,0 +1,42 @@
+# render.yaml - Infrastructure as Code for Render deployment
+# Deploy: render deploy --yaml
+
+# Free tier Web Service
+services:
+  - type: web
+    name: dora-agent
+    env: node
+    region: oregon  # or: singapore, frankfurt, ohio
+    plan: free
+    
+    # Build settings
+    buildCommand: npm install
+    startCommand: node server.js
+    
+    # Health check (REQUIRED for free tier reliability)
+    healthCheckPath: /ping
+    
+    # Auto-sleep prevention (free tier sleeps after 15 min idle)
+    # Render wakes services on any HTTP request to this endpoint
+    numInstances: 1
+    
+    # Environment variables (secrets set in Render dashboard)
+    envVars:
+      - key: NODE_ENV
+        value: production
+      
+      - key: PORT
+        value: 10000
+      
+      - key: OLLAMA_API
+        sync: false  # Set in Render dashboard
+      
+      - key: OLLAMA_KEY
+        sync: false  # Set in Render dashboard
+      
+      - key: MODEL
+        value: kimi-k2.5:cloud
+      
+      # Optional: Increase timeout for AI calls
+      - key: TIMEOUT_MS
+        value: 25000
