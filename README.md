@@ -1,8 +1,6 @@
 # NumInfo - Bangladesh Number Lookup
 
-A sleek, modern phone number lookup tool for Bangladesh numbers, built with pure HTML/CSS/JS and deployed on GitHub Pages.
-
-**Live site:** https://rahamanleon.github.io/numinfo-website/
+A sleek, modern phone number lookup tool for Bangladesh numbers, built with pure HTML/CSS/JS.
 
 ## Features
 
